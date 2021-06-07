@@ -34,9 +34,10 @@ def viz(img, flo):
     # import matplotlib.pyplot as plt
     # plt.imshow(img_flo / 255.0)
     # plt.show()
+    np.save("/home/alh293/RAFT/outputs/00339_flow.npy", (img_flo / 255.0))
 
-    cv2.imshow('image', img_flo[:, :, [2,1,0]]/255.0)
-    cv2.waitKey()
+    #  cv2.imshow('image', img_flo[:, :, [2,1,0]]/255.0)
+    #  cv2.waitKey()
 
 
 def demo(args):
